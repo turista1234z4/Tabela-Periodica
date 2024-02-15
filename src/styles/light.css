@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+:root {
+    --cor_fonte: #000000;
+    --cor_nao_metal: #0bda49;
+    --cor_nobres: #7fc1f7;
+    --cor_alcalinos: #F68FFF;
+    --cor_terrosos: #EAE122;
+    --cor_semimetais: #33D6AB;
+    --cor_halogenios: #6494a3;
+    --cor_representativos: #acacac;
+    --cor_transicao: #fd8625;
+    --cor_lantanideos: #9664D5;
+    --cor_actinidios: #b6267a;
+}
+
+header {
+    background-color: rgb(226, 234, 238);
+    color: #000000;
+}
+
+header nav {
+    background-color: transparent;
+}
+
+header .mobile-menu div {
+    background: #000000;
+}
+
+.legendaDuplicata>div {
+    border-color: #000000;
+}
+
+.legendaDuplicata>p {
+    color: #000000;
+}
+
+a {
+    color: var(--cor_fonte);
+}
+
+input.inputTema {
+    background-color: #e0eef8d8;
+    box-shadow: inset 0px 0px 16px 1px rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+form input[type="checkbox"]:checked {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* *Configurações do tipo de elemento* */
+#periodica td {
+    border: 0.5px solid #000000;
+}
+
+.nao_metal {
+    background-color: var(--cor_nao_metal);
+}
+
+.nobres {
+    background-color: var(--cor_nobres);
+}
+
+.alcalinos {
+    background-color: var(--cor_alcalinos);
+}
+
+.terrosos {
+    background-color: var(--cor_terrosos);
+}
+
+.semimetais {
+    background-color: var(--cor_semimetais);
+}
+
+.halogenios {
+    background-color: var(--cor_halogenios);
+}
+
+.representativos {
+    background-color: var(--cor_representativos);
+}
+
+.transicao {
+    background-color: var(--cor_transicao);
+}
+
+.lantanideos {
+    background-color: var(--cor_lantanideos);
+}
+
+#legendaLatanideos {
+    color: var(--cor_lantanideos);
+}
+
+.actinidios {
+    background-color: var(--cor_actinidios);
+}
+
+#legendaActinidios {
+    color: var(--cor_actinidios);
+}
+
+table#elemental th {
+    background-color: #6585ec;
+    border: 1px solid #000000;
+}
+
+table#elemental td {
+    border: 1px solid #000000;
+    order: 1;
+
+}
+
+table#elemental td * {
+    border: 1px solid #000000;
+    font-size: 0.75em;
+}
+
+div#descricaoElemento {
+    border: 1px solid #000000;
+    border-left-color: rgba(0, 0, 0, 0.9);
+    width: 150px;
+    height: 131px;
+}
+
+aside#pagina_history *:hover {
+    color: rgb(30, 21, 87);
+    text-decoration: underline;
+}
+
+.txt {
+    margin-left: 10px;
+    color: white;
+}
+
+ul li button {
+    margin-left: 200px;
+}
+
+#veja_mais {
+    color: #000000;
+}
+
+#elemental {
+    background-color: rgba(255, 255, 255, 10);
+}
+
+fieldset {
+    background-color: rgb(145, 232, 243);
+    margin-right: 20vh;
+}
+
+#label, #inputRangeBordas{
+    margin-left: 100px;
+}

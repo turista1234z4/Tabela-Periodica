@@ -1,0 +1,12 @@
+@media screen and (max-width: 950px) {
+   header,
+   header *,
+   aside#pagina_history,
+   table#elemental,
+   .duplicate-td,
+   .legendaDuplicata,
+   a#veja_mais,
+   footer {
+      display: none;
+   }
+}

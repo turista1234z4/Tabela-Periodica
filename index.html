@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Periódica</title>
+    <link rel="stylesheet" href="./src/styles/styles.css" media="all" id="cssPadrao">
+    <link rel="stylesheet" href="./src/styles/light.css" class="tema" media="screen">
+    <link rel="stylesheet" href="./src/styles/hamburguer.css">
+    <link rel="stylesheet" href="./src/styles/media-queries/iframe.css">
+    <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon"
+        alt="href= https://www.flaticon.com/br/icones-gratis/ciencia title=ciência ícones Ciência ícones criados por Freepik - Flaticon">
+</head>
+
+<body>
+    <header>
+        <h1>Tabela Periódica</h1>
+
+        <label for="inputMostraFormulario" id="inputEngrenagemFormulario">
+            <input type="checkbox" id="inputMostraFormulario" name="inputMostraFormulario">
+        </label>
+        <nav id="nav">
+            <ul>
+                <li><label for="inputMostraFormulario" id="inputEngrenagemFormulario">
+                        <input type="checkbox" id="inputMostraFormulario" name="inputMostraFormulario">
+                    </label></li>
+            </ul>
+
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list"><br>
+                <div>
+                    <li class="type"><a href="pages/history.html">História da Tabela Periodica</a></li>
+                </div>
+                <div>
+                    <li class="type"><a href="pages/history.html#ELE">Elementos</a></li>
+                </div>
+                <div>
+                    <li class="type"><a href="pages/history.html#CIE">Cientistas</a></li>
+                </div>
+                <div>
+                    <li class="type"><a href="pages/history.html#dia">Diagramas</a></li>
+                </div>
+                <hr>
+                <li class="type">
+                    <h2 style="color: whitesmoke;">Configurações</h2>
+                </li>
+                <li class="type">
+                    <form method="get" onsubmit="return false" class="print" id="formConfig">
+                </li>
+                <li class="type">
+                    <a href="#">
+                        <div id="som">
+                            <label for="inputSom">Som</label>
+                            <input type="checkbox" name="inputSom" id="inputSom">
+                        </div>
+                </li> </a></li>
+
+                <br><br>
+                <li>
+                    <div>
+                        <div id="containerTema">
+                            <img class="astro" src="./src/img/sun.png" id="sol"
+                                alt="Icons made by href=https://www.flaticon.com/br/autores/andrean-prabowo https://www.flaticon.com/   Flaticon www.flaticon.com">
+                            <input type="checkbox" name="inputTema" id="inputTema" class="inputTema"
+                                onclick="mudarTemaIndex()">
+                            <img class="astro" src="./src/img/moon.png" id="lua"
+                                alt="Icons made by https://www.flaticon.com/br/icones-gratis/lua titleFreepik Freepik from  hrefhttps://www.flaticon.com/ title=Flaticonwww.flaticon.com">
+                        </div>
+                </li>
+                <br><br>
+                <li><form method="get" onsubmit="return false" class="print" id="formConfig">
+                        <label for="inputRangeBordas" id="label">Arredondamento de borda</label><br>
+                        <input type="range" name="inputRangeBordas" id="inputRangeBordas" min="0" max="50" step="10" value="0">
+                    </div>
+                    <button id="enviar">Enviar</button>
+                </form></li>
+                <br>
+
+                <li>
+                    <button class="buttonA">
+                        <p>Plano de Fundo</p>
+
+                        <div id="menuA">
+
+                            <h2>Background Disponíveis</h2>
+                            <a href="index.html" target="no_blank"><img src="src/img/img background/nenhum.webp" alt=""
+                                    id="nenhum"></a><br>
+
+                            <img src="./src/img/img background/529620-colorful-tulips-flowers-plants.jpg"
+                                onclick="mudarBackground('./src/img/img background/529620-colorful-tulips-flowers-plants.jpg')"
+                                alt="Imagem 1" id="flowers">
+                            <img src="./src/img/img background/maxresdefault.jpg"
+                                onclick="mudarBackground('./src/img/img background/maxresdefault.jpg')" alt="Imagem 2">
+                            <img src="./src/img/img background/lamborghini.webp"
+                                onclick="mudarBackground('./src/img/img background/lamborghini.webp')" alt="Imagem 3">
+                            <img src="./src/img/img background/planeta.jpg"
+                                onclick="mudarBackground('./src/img/img background/planeta.jpg')" alt="Imagem 3">
+                            <img src="./src/img/img background/cosmos.jpg"
+                                onclick="mudarBackground('./src/img/img background/cosmos.jpg')" alt="Imagem 3">
+                            <img src="./src/img/img background/onça.jpg"
+                                onclick="mudarBackground('./src/img/img background/onça.jpg')" alt="Imagem 3">
+                            <img src="./src/img/img background/araras.jpg"
+                                onclick="mudarBackground('./src/img/img background/araras.jpg')" alt="Imagem 3">
+                            <img src="./src/img/img background/cacto.jpg"
+                                onclick="mudarBackground('./src/img/img background/cacto.jpg')" alt="Imagem 3">
+                            <img src="./src/img/img background/cobra azul.webp"
+                                onclick="mudarBackground('./src/img/img background/cobra azul.webp')" alt="Imagem 3">
+                            <img src="./src/img/img background/cobra neon.jpg"
+                                onclick="mudarBackground('./src/img/img background/cobra neon.jpg')" alt="Imagem 3">
+                            <img src="./src/img/img background/folhas.jpg"
+                                onclick="mudarBackground('./src/img/img background/folhas.jpg')" alt="Imagem 3">
+                            <img src="./src/img/img background/vitoria regia real.jpg"
+                                onclick="mudarBackground('./src/img/img background/vitoria regia real.jpg')" alt="Imagem 3">   
+                            <img src="./src/img/img background/gatitos real.jpg"
+                                onclick="mudarBackground('./src/img/img background/gatitos real.jpg')" alt="Imagem 3">
+                            <img src="./src/img/img background/por do sol real.jpg"
+                                onclick="mudarBackground('./src/img/img background/por do sol real.jpg')"
+                                alt="Imagem 3">
+                            <img src="./src/img/img background/fundo mar.jpg"
+                                onclick="mudarBackground('./src/img/img background/fundo mar.jpg')" alt="Imagem 3">
+                                <img src="./src/img/img background/coral.jpg"
+                                onclick="mudarBackground('./src/img/img background/coral.jpg')" alt="Imagem 3">
+                                <img src="./src/img/img background/céu.jpg"
+                                onclick="mudarBackground('./src/img/img background/céu.jpg')" alt="Imagem 3">
+                                <img src="./src/img/img background/cidade.jpg"
+                                onclick="mudarBackground('./src/img/img background/cidade.jpg')" alt="Imagem 3">
+                                <img src="./src/img/img background/rosca.jpg"
+                                onclick="mudarBackground('./src/img/img background/rosca.jpg')" alt="Imagem 3">
+                                <img src="./src/img/img background/roxo.jpg"
+                                onclick="mudarBackground('./src/img/img background/roxo.jpg')" alt="Imagem 3">
+                        </div>
+                        <script>
+                            function mudarBackground(imagem) {
+                                document.body.style.backgroundImage = `url('${imagem}')`;
+                            }
+                        </script>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form method="get" onsubmit="return false" class="print" id="formConfig">
+        <div id="som">
+            <label for="inputSom">Som</label>
+            <input type="checkbox" name="inputSom" id="inputSom">
+        </div>
+        <div>
+            <div id="containerTema">
+                <img class="astro" src="./src/img/sun.png" id="sol"
+                    alt="Icons made by href=https://www.flaticon.com/br/autores/andrean-prabowo https://www.flaticon.com/   Flaticon www.flaticon.com">
+                <input type="checkbox" name="inputTema" id="inputTema" class="inputTema" onclick="mudarTemaIndex()">
+                <img class="astro" src="./src/img/moon.png" id="lua"
+                    alt="Icons made by https://www.flaticon.com/br/icones-gratis/lua titleFreepik Freepik from  hrefhttps://www.flaticon.com/ title=Flaticonwww.flaticon.com">
+            </div>
+            <label for="inputRangeBordas">Arredondamento de borda</label>
+            <input type="range" name="inputRangeBordas" id="inputRangeBordas" min="0" max="50" step="10" value="0">
+        </div>
+        <button id="enviar">Enviar</button>
+    </form>
+    <main>
+        <!--*tabela onde serão copiados os elementos-->
+        <div id="duplicata">
+            <div class="duplicate-td" id="copia"></div>
+            <div class="legendaNewCell">
+                <div class="legendaDuplicata" id="legendaDuplicata1">
+                    <div></div>
+                    <p>Número Atômico</p>
+                </div>
+                <div class="legendaDuplicata" id="legendaDuplicata2">
+                    <div></div>
+                    <p>Símbolo</p>
+                </div>
+                <div class="legendaDuplicata" id="legendaDuplicata3">
+                    <div></div>
+                    <p>Número de Massa <span class="obs">(isótopo mais estável)</span></p>
+                </div>
+            </div>
+        </div>
+
+
+        <table id="elemental" class="print">
+            <tr>
+                <th scope="row" id="nomeElementoTitulo">Elemento</th>
+                <td id="nomeElemento">lorem</td>
+            </tr>
+            <tr>
+                <th scope="row" id="numeroAtomicoTitulo">Número Atômico</th>
+                <td id="numeroAtomico">Lorem</td>
+            </tr>
+            <tr>
+                <th scope="row" id="numeroMassaTitulo">Número de Massa</th>
+                <td id="numeroMassa">lorem</td>
+            </tr>
+            <tr>
+                <th scope="row" id="configEletronicaTitulo">Configuração Eletrônica</th>
+                <td id="configEletronica" style="font-size: 60%;">lorem</td>
+            </tr>
+            <tr>
+                <th scope="row" id="naturezaElementoTitulo">Natureza</th>
+                <td id="naturezaElemento">lorem</td>
+            </tr>
+            <tr>
+                <th scope="row" id="estadoFisicoTitulo">Estado Físico</th>
+                <td id="estadoFisico">lorem</td>
+            </tr>
+            <tr>
+                <th scope="row" id="familiaTitulo">Família</th>
+                <td id="familia">lorem</td>
+            </tr>
+            <abbr title="Wikipédia"><a href="./pages/history.html" id="veja_mais" target="no_blank">Veja mais
+                    aqui!</a></abbr>
+        </table>
+
+
+        <table id="periodica">
+            <tbody>
+                <tr class="brancoNoDark">
+                    <th id="titulo_grupos" scope="colgroup">Grupos</th>
+                </tr>
+                <tr class="brancoNoDark">
+                    <td class="num_grupo invisivel">0</td>
+                    <td class="num_grupo" style="border: none;">1</td>
+                    <td class="num_grupo" style="border: none;">2</td>
+                    <td class="num_grupo" style="border: none;">3</td>
+                    <td class="num_grupo" style="border: none;">4</td>
+                    <td class="num_grupo" style="border: none;">5</td>
+                    <td class="num_grupo" style="border: none;">6</td>
+                    <td class="num_grupo" style="border: none;">7</td>
+                    <td class="num_grupo" style="border: none;">8</td>
+                    <td class="num_grupo" style="border: none;">9</td>
+                    <td class="num_grupo" style="border: none;">10</td>
+                    <td class="num_grupo" style="border: none;">11</td>
+                    <td class="num_grupo" style="border: none;">12</td>
+                    <td class="num_grupo" style="border: none;">13</td>
+                    <td class="num_grupo" style="border: none;">14</td>
+                    <td class="num_grupo" style="border: none;">15</td>
+                    <td class="num_grupo" style="border: none;">16</td>
+                    <td class="num_grupo" style="border: none;">17</td>
+                    <td class="num_grupo" style="border: none;">18</td>
+                </tr>
+                <tr class="brancoNoDark">
+                    <th>Períodos</th>
+                </tr>
+                <tr id="periodo1">
+                    <td class="num_periodo" style="border: none;">1</td>
+                    <td class="nao_metal" class="original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">1</div>
+                        <abbr title="Hidrogênio">
+                            <div class="simbolo" id="h">H</div>
+                        </abbr>
+                        <div class="a">1,008</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="nobres original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">2</div>
+                        <abbr title="Hélio">
+                            <div class="simbolo" id="he">He</div>
+                        </abbr>
+                        <div class="a">4,0026</div>
+                    </td>
+                </tr>
+
+                <tr id="periodo2">
+                    <td class="num_periodo" style="border: none;">2</td>
+                    <td class="alcalinos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">3</div>
+                        <abbr title="Lítio">
+                            <div class="simbolo" id="li">Li</div>
+                        </abbr>
+                        <div class="a">6,94</div>
+                    </td>
+                    <td class="terrosos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">4</div>
+                        <abbr title="Berílio">
+                            <div class="simbolo" id="be">Be</div>
+                        </abbr>
+                        <div class="a">9,0122</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class=" a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="semimetais original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">5</div>
+                        <abbr title="Boro">
+                            <div class="simbolo" id="b">B</div>
+                        </abbr>
+                        <div class="a">10,81</div>
+                    </td>
+                    <td class="nao_metal original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">6</div>
+                        <abbr title="Carbono">
+                            <div class="simbolo" id="c">C</div>
+                        </abbr>
+                        <div class="a">12,011</div>
+                    </td>
+                    <td class="nao_metal original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">7</div>
+                        <abbr title="Nitrogênio">
+                            <div class="simbolo" id="n">N</div>
+                        </abbr>
+                        <div class="a">14,007</div>
+                    </td>
+                    <td class="nao_metal original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">8</div>
+                        <abbr title="Oxigênio">
+                            <div class="simbolo" id="o">O</div>
+                        </abbr>
+                        <div class="a">15,999</div>
+                    </td>
+                    <td class="halogenios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">9</div>
+                        <abbr title="Flúor">
+                            <div class="simbolo" id="f">F</div>
+                        </abbr>
+                        <div class="a">18,998</div>
+                    </td>
+                    <td class="nobres original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">10</div>
+                        <abbr title="Neônio">
+                            <div class="simbolo" id="ne">Ne</div>
+                        </abbr>
+                        <div class="a">20,180</div>
+                    </td>
+                </tr>
+
+                <tr id="periodo3">
+                    <td class="num_periodo" style="border: none;">3</td>
+                    <td class="alcalinos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">11</div>
+                        <abbr title="Sódio">
+                            <div class="simbolo" id="na">Na</div>
+                        </abbr>
+                        <div class="a">22,990</div>
+                    </td>
+                    <td class="terrosos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">12</div>
+                        <abbr title="Magnésio">
+                            <div class="simbolo" id="mg">Mg</div>
+                        </abbr>
+                        <div class="a">24,305</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class=" a">00000</div>
+                    </td>
+                    <td class="invisivel">
+                        <div class="z">0</div>
+                        <abbr title="teste">
+                            <div class="simbolo">0</div>
+                        </abbr>
+                        <div class="a">00000</div>
+                    </td>
+                    <td class="representativos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">13</div>
+                        <abbr title="Alumínio">
+                            <div class="simbolo" id="al">Al</div>
+                        </abbr>
+                        <div class="a">26,982</div>
+                    </td>
+                    <td class="semimetais original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">14</div>
+                        <abbr title="Silíco">
+                            <div class="simbolo" id="si">Si</div>
+                        </abbr>
+                        <div class="a">28,085</div>
+                    </td>
+                    <td class="nao_metal original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">15</div>
+                        <abbr title="Fósforo">
+                            <div class="simbolo" id="p">P</div>
+                        </abbr>
+                        <div class="a">30,974</div>
+                    </td>
+                    <td class="nao_metal original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">16</div>
+                        <abbr title="Enxofre">
+                            <div class="simbolo" id="s">S</div>
+                        </abbr>
+                        <div class="a">32,06</div>
+                    </td>
+                    <td class="halogenios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">17</div>
+                        <abbr title="Cloro">
+                            <div class="simbolo" id="cl">Cl</div>
+                        </abbr>
+                        <div class="a">35,45</div>
+                    </td>
+                    <td class="nobres original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">18</div>
+                        <abbr title="Argônio">
+                            <div class="simbolo" id="ar">Ar</div>
+                        </abbr>
+                        <div class="a">39,948</div>
+                    </td>
+                </tr>
+
+                <tr id="periodo4">
+                    <td class="num_periodo" style="border: none;">4</td>
+                    <td class="alcalinos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">19</div>
+                        <abbr title="Potássio">
+                            <div class="simbolo" id="k">K</div>
+                        </abbr>
+                        <div class="a">39,098</div>
+                    </td>
+                    <td class="terrosos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">20</div>
+                        <abbr title="Cálcio">
+                            <div class="simbolo" id="ca">Ca</div>
+                        </abbr>
+                        <div class="a">40,078</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">21</div>
+                        <abbr title="Escândio">
+                            <div class="simbolo" id="sc">Sc</div>
+                        </abbr>
+                        <div class="a">44,956</div>
+                    </td>
+                    <td class="transicao" class="original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">22</div>
+                        <abbr title="Titânio">
+                            <div class="simbolo" id="ti">Ti</div>
+                        </abbr>
+                        <div class="a">47,867</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">23</div>
+                        <abbr title="Vanádio">
+                            <div class="simbolo" id="v">V</div>
+                        </abbr>
+                        <div class="a">50,942</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">24</div>
+                        <abbr title="Crômio">
+                            <div class="simbolo" id="cr">Cr</div>
+                        </abbr>
+                        <div class="a">51,996</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">25</div>
+                        <abbr title="Manganês">
+                            <div class="simbolo" id="mn">Mn</div>
+                        </abbr>
+                        <div class="a">54,938</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">26</div>
+                        <abbr title="Ferro">
+                            <div class="simbolo" id="fe">Fe</div>
+                        </abbr>
+                        <div class="a">55,845</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">27</div>
+                        <abbr title="Cobalto">
+                            <div class="simbolo" id="co">Co</div>
+                        </abbr>
+                        <div class="a">58,933</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">28</div>
+                        <abbr title="Níquel">
+                            <div class="simbolo" id="ni">Ni</div>
+                        </abbr>
+                        <div class="a">58,933</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">29</div>
+                        <abbr title="Cobre">
+                            <div class="simbolo" id="cu">Cu</div>
+                        </abbr>
+                        <div class=" a">63,546</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">30</div>
+                        <abbr title="Zinco">
+                            <div class="simbolo" id="zn">Zn</div>
+                        </abbr>
+                        <div class="a">65,38</div>
+                    </td>
+                    <td class="representativos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">31</div>
+                        <abbr title="Gálio">
+                            <div class="simbolo" id="ga">Ga</div>
+                        </abbr>
+                        <div class="a">69,723</div>
+                    </td>
+                    <td class="semimetais original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">32</div>
+                        <abbr title="Germânio">
+                            <div class="simbolo" id="ge">Ge</div>
+                        </abbr>
+                        <div class="a">72,630</div>
+                    </td>
+                    <td class="semimetais original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">33</div>
+                        <abbr title="Arsênio">
+                            <div class="simbolo" id="as">As</div>
+                        </abbr>
+                        <div class="a">74,922</div>
+                    </td>
+                    <td class="nao_metal original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">34</div>
+                        <abbr title="Selênio">
+                            <div class="simbolo" id="se">Se</div>
+                        </abbr>
+                        <div class="a">78,971</div>
+                    </td>
+                    <td class="halogenios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">35</div>
+                        <abbr title="Bromo">
+                            <div class="simbolo" id="br">Br</div>
+                        </abbr>
+                        <div class="a">79,904</div>
+                    </td>
+                    <td class="nobres original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">36</div>
+                        <abbr title="Criptônio">
+                            <div class="simbolo" id="kr">Kr</div>
+                        </abbr>
+                        <div class="a">83,798</div>
+                    </td>
+                </tr>
+
+                <tr id="periodo5">
+                    <td class="num_periodo" style="border: none;">5</td>
+                    <td class="alcalinos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">37</div>
+                        <abbr title="Rubídio">
+                            <div class="simbolo" id="rb">Rb</div>
+                        </abbr>
+                        <div class="a">85,468</div>
+                    </td>
+                    <td class="terrosos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">38</div>
+                        <abbr title="Estrôncio">
+                            <div class="simbolo" id="sr">Sr</div>
+                        </abbr>
+                        <div class="a">87,62</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">39</div>
+                        <abbr title="Ítrio">
+                            <div class="simbolo" id="y">Y</div>
+                        </abbr>
+                        <div class="a">88,906</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">40</div>
+                        <abbr title="Zincônio">
+                            <div class="simbolo" id="zr">Zr</div>
+                        </abbr>
+                        <div class="a">91,224</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">41</div>
+                        <abbr title="Nióbio">
+                            <div class="simbolo" id="nb">Nb</div>
+                        </abbr>
+                        <div class="a">92,906</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">42</div>
+                        <abbr title="Molibdênio">
+                            <div class="simbolo" id="mo">Mo</div>
+                        </abbr>
+                        <div class="a">95,95</div>
+                    </td>
+                    <td class="transicao" class="original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">43</div>
+                        <abbr title="Tecnécio">
+                            <div class="simbolo" id="tc">Tc</div>
+                        </abbr>
+                        <div class="a">98</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">44</div>
+                        <abbr title="Rutênio">
+                            <div class="simbolo" id="ru">Ru</div>
+                        </abbr>
+                        <div class="a">101,07</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">45</div>
+                        <abbr title="Ródio">
+                            <div class="simbolo" id="rh">Rh</div>
+                        </abbr>
+                        <div class="a">102,91</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">46</div>
+                        <abbr title="Paládio">
+                            <div class="simbolo" id="pd">Pd</div>
+                        </abbr>
+                        <div class="a">106,42</div>
+                    </td>
+                    <td class="transicao" class="original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">47</div>
+                        <abbr title="Prata">
+                            <div class="simbolo" id="ag">Ag</div>
+                        </abbr>
+                        <div class=" a">107,87</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">48</div>
+                        <abbr title="Cádmio">
+                            <div class="simbolo" id="cd">Cd</div>
+                        </abbr>
+                        <div class="a">112,41</div>
+                    </td>
+                    <td class="representativos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">49</div>
+                        <abbr title="Índio">
+                            <div class="simbolo" id="in">In</div>
+                        </abbr>
+                        <div class="a">114,82</div>
+                    </td>
+                    <td class="representativos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">50</div>
+                        <abbr title="Estanho">
+                            <div class="simbolo" id="sn">Sn</div>
+                        </abbr>
+                        <div class="a">118,71</div>
+                    </td>
+                    <td class="semimetais original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">51</div>
+                        <abbr title="Antimônio">
+                            <div class="simbolo" id="sb">Sb</div>
+                        </abbr>
+                        <div class="a">121,76</div>
+                    </td>
+                    <td class="semimetais original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">52</div>
+                        <abbr title="Telúrio">
+                            <div class="simbolo" id="te">Te</div>
+                        </abbr>
+                        <div class="a">127,60</div>
+                    </td>
+                    <td class="halogenios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">53</div>
+                        <abbr title="Íodo">
+                            <div class="simbolo" id="i">I</div>
+                        </abbr>
+                        <div class="a">126,90</div>
+                    </td>
+                    <td class="nobres original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">54</div>
+                        <abbr title="Xenônio">
+                            <div class="simbolo" id="xe">Xe</div>
+                        </abbr>
+                        <div class="a">131,29</div>
+                    </td>
+                </tr>
+
+                <img src="./src/img/arrow.png" id="seta1" class="seta">
+                <tr id="periodo6">
+                    <td class="num_periodo" style="border: none;">6</td>
+                    <td class="alcalinos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">55</div>
+                        <abbr title="Césio">
+                            <div class="simbolo" id="cs">Cs</div>
+                        </abbr>
+                        <div class="a">132,91</div>
+                    </td>
+                    <td class="terrosos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">56</div>
+                        <abbr title="Bário">
+                            <div class="simbolo" id="ba">Ba</div>
+                        </abbr>
+                        <div class="a">137,33</div>
+                    </td>
+                    <td class="actinidios_latanideos" style="border: none;">
+                        <p id="legendaLatanideos" class="linhasSeparadas" onmouseenter="mostrarSeta1()"
+                            onmouseout="esconderSeta1()">57-71</p>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">72</div>
+                        <abbr title="Háfnio">
+                            <div class="simbolo" id="hf">Hf</div>
+                        </abbr>
+                        <div class="a">178,49</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">73</div>
+                        <abbr title="Tântalo">
+                            <div class="simbolo" id="ta">Ta</div>
+                        </abbr>
+                        <div class="a">180,95</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">74</div>
+                        <abbr title="Tungstênio">
+                            <div class="simbolo" id="w">W</div>
+                        </abbr>
+                        <div class="a">183,84</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">75</div>
+                        <abbr title="Rênio">
+                            <div class="simbolo" id="re">Re</div>
+                        </abbr>
+                        <div class="a">186,21</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">76</div>
+                        <abbr title="Ósmio">
+                            <div class="simbolo" id="os">Os</div>
+                        </abbr>
+                        <div class="a">190,23</div>
+                    </td>
+                    <td class="transicao ir original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">77</div>
+                        <abbr title="Irídio">
+                            <div class="simbolo" id="ir">Ir</div>
+                        </abbr>
+                        <div class="a">192,22</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">78</div>
+                        <abbr title="Platina">
+                            <div class="simbolo" id="pt">Pt</div>
+                        </abbr>
+                        <div class="a">195,08</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">79</div>
+                        <abbr title="Ouro">
+                            <div class="simbolo" id="au">Au</div>
+                        </abbr>
+                        <div class=" a">196,97</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">80</div>
+                        <abbr title="Mercúrio">
+                            <div class="simbolo" id="hg">Hg</div>
+                        </abbr>
+                        <div class="a">200,59</div>
+                    </td>
+                    <td class="representativos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">81</div>
+                        <abbr title="Tálio">
+                            <div class="simbolo" id="ti">Ti</div>
+                        </abbr>
+                        <div class="a">204,38</div>
+                    </td>
+                    <td class="representativos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">82</div>
+                        <abbr title="Chumbo">
+                            <div class="simbolo" id="pb">Pb</div>
+                        </abbr>
+                        <div class="a">207,2</div>
+                    </td>
+                    <td class="representativos  original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">83</div>
+                        <abbr title="Bismuto">
+                            <div class="simbolo" id="bi">Bi</div>
+                        </abbr>
+                        <div class="a">208,98</div>
+                    </td>
+                    <td class="semimetais original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">84</div>
+                        <abbr title="Polônio">
+                            <div class="simbolo" id="po">Po</div>
+                        </abbr>
+                        <div class="a">209</div>
+                    </td>
+                    <td class="halogenios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">85</div>
+                        <abbr title="Astato">
+                            <div class="simbolo" id="at">At</div>
+                        </abbr>
+                        <div class="a">210</div>
+                    </td>
+                    <td class="nobres original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">86</div>
+                        <abbr title="Randônio">
+                            <div class="simbolo" id="rn">Rn</div>
+                        </abbr>
+                        <div class="a">222</div>
+                    </td>
+                </tr>
+
+                <img src="./src/img/arrow.png" id="seta2" class="seta">
+                <tr id="periodo7">
+                    <td class="num_periodo" style="border: none;">7</td>
+                    <td class="alcalinos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">87</div>
+                        <abbr title="Frâncio">
+                            <div class="simbolo" id="fr">Fr</div>
+                        </abbr>
+                        <div class="a">223</div>
+                    </td>
+                    <td class="terrosos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">88</div>
+                        <abbr title="Rádio">
+                            <div class="simbolo" id="ra">Ra</div>
+                        </abbr>
+                        <div class="a">226</div>
+                    </td>
+                    <td class="actinidios_latanideos" style="border: none;">
+                        <p id="legendaActinidios" class="linhasSeparadas" onmouseenter="mostrarSeta2()"
+                            onmouseout="esconderSeta2()">89-103</p>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">104</div>
+                        <abbr title="Rutherfórdio">
+                            <div class="simbolo" id="rf">Rf</div>
+                        </abbr>
+                        <div class="a">267</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">105</div>
+                        <abbr title="Dúbnio">
+                            <div class="simbolo" id="db">Db</div>
+                        </abbr>
+                        <div class="a">268</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">106</div>
+                        <abbr title="Seabórgio">
+                            <div class="simbolo" id="sg">Sg</div>
+                        </abbr>
+                        <div class="a">269</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">107</div>
+                        <abbr title="Bóhrio">
+                            <div class="simbolo" id="bh">Bh</div>
+                        </abbr>
+                        <div class="a">270</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">108</div>
+                        <div class="simbolo" id="hs">Hs</div>
+                        <abbr title="Hássio">
+                        </abbr>
+                        <div class="a">269</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">109</div>
+                        <abbr title="Meitnério">
+                            <div class="simbolo" id="mt">Mt</div>
+                        </abbr>
+                        <div class="a">278</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">110</div>
+                        <abbr title="Darmstádtio">
+                            <div class="simbolo" id="ds">Ds</div>
+                        </abbr>
+                        <div class="a">281</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">111</div>
+                        <abbr title="Roentgênio">
+                            <div class="simbolo" id="rg">Rg</div>
+                        </abbr>
+                        <div class=" a">281</div>
+                    </td>
+                    <td class="transicao original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">112</div>
+                        <abbr title="Copérnicio">
+                            <div class="simbolo" id="cn">Cn</div>
+                        </abbr>
+                        <div class="a">285</div>
+                    </td>
+                    <td class="representativos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">113</div>
+                        <abbr title="Nihônio">
+                            <div class="simbolo" id="nh">Nh</div>
+                        </abbr>
+                        <div class="a">286</div>
+                    </td>
+                    <td class="representativos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">114</div>
+                        <abbr title="Fleróvio">
+                            <div class="simbolo" id="fi">Fi</div>
+                        </abbr>
+                        <div class="a">289</div>
+                    </td>
+                    <td class="representativos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">115</div>
+                        <abbr title="Moscóvio">
+                            <div class="simbolo" id="mc">Mc</div>
+                        </abbr>
+                        <div class="a">288</div>
+                    </td>
+                    <td class="representativos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">116</div>
+                        <abbr title="Livermório">
+                            <div class="simbolo" id="lv">Lv</div>
+                        </abbr>
+                        <div class="a">293</div>
+                    </td>
+                    <td class="halogenios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">117</div>
+                        <abbr title="Tenesso">
+                            <div class="simbolo" id="ts">Ts</div>
+                        </abbr>
+                        <div class="a">294</div>
+                    </td>
+                    <td class="nobres original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">118</div>
+                        <abbr title="Oganessônio">
+                            <div class="simbolo" id="og">Og</div>
+                        </abbr>
+                        <div class="a">294</div>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody id="outras2Linhas">
+                <tr id="periodo7A">
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">57</div>
+                        <abbr title="Lantânio">
+                            <div class="simbolo" id="la">La</div>
+                        </abbr>
+                        <div class="a">138,91</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">58</div>
+                        <abbr title="Cério">
+                            <div class="simbolo" id="ce">Ce</div>
+                        </abbr>
+                        <div class="a">140,12</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">59</div>
+                        <abbr title="Praseodímio">
+                            <div class="simbolo" id="pr">Pr</div>
+                        </abbr>
+                        <div class="a">140,91</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">60</div>
+                        <abbr title="Neodímio">
+                            <div class="simbolo" id="nd">Nd</div>
+                        </abbr>
+                        <div class="a">144,24</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">61</div>
+                        <abbr title="Promécio">
+                            <div class="simbolo" id="pm">Pm</div>
+                        </abbr>
+                        <div class="a">145</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">62</div>
+                        <abbr title="Samário">
+                            <div class="simbolo" id="sm">Sm</div>
+                        </abbr>
+                        <div class="a">150,36</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">63</div>
+                        <abbr title="Európio">
+                            <div class="simbolo" id="eu">Eu</div>
+                        </abbr>
+                        <div class="a">151,96</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">64</div>
+                        <abbr title="Gadolínio">
+                            <div class="simbolo" id="gd">Gd</div>
+                        </abbr>
+                        <div class=" a">157,25</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">65</div>
+                        <abbr title="Térbio">
+                            <div class="simbolo" id="tb">Tb</div>
+                        </abbr>
+                        <div class="a">158,93</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">66</div>
+                        <abbr title="Disprósio">
+                            <div class="simbolo" id="dy">Dy</div>
+                        </abbr>
+                        <div class="a">162,50</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">67</div>
+                        <abbr title="Hólmio">
+                            <div class="simbolo" id="ho">Ho</div>
+                        </abbr>
+                        <div class="a">164,93</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">68</div>
+                        <abbr title="Érbio">
+                            <div class="simbolo" id="er">Er</div>
+                        </abbr>
+                        <div class="a">167,26</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">69</div>
+                        <abbr title="Túlio">
+                            <div class="simbolo" id="tm">Tm</div>
+                        </abbr>
+                        <div class="a">168,93</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">70</div>
+                        <abbr title="Itérbio">
+                            <div class="simbolo" id="yb">Yb</div>
+                        </abbr>
+                        <div class="a">173,05</div>
+                    </td>
+                    <td class="lantanideos original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">71</div>
+                        <abbr title="Lutécio">
+                            <div class="simbolo" id="lu">Lu</div>
+                        </abbr>
+                        <div class="a">174,97</div>
+                    </td>
+                </tr>
+                <tr id="periodo7B">
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">89</div>
+                        <abbr title="Actínio">
+                            <div class="simbolo" id="ac" style="padding: 0px 0.47em;">Ac</div>
+                        </abbr>
+                        <div class="a">227</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">90</div>
+                        <abbr title="Tório">
+                            <div class="simbolo" id="th">Th</div>
+                        </abbr>
+                        <div class="a">232,04</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">91</div>
+                        <abbr title="Protactínio">
+                            <div class="simbolo" id="pa">Pa</div>
+                        </abbr>
+                        <div class="a">231,04</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">92</div>
+                        <abbr title="Urânio">
+                            <div class="simbolo" id="u">U</div>
+                        </abbr>
+                        <div class="a">238,03</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)" style="padding: 0 13px;">
+                        <div class="z">93</div>
+                        <abbr title="Netúnio">
+                            <div class="simbolo" id="np">Np</div>
+                        </abbr>
+                        <div class="a">237</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">94</div>
+                        <abbr title="Plutônio">
+                            <div class="simbolo" id="pu">Pu</div>
+                        </abbr>
+                        <div class="a">244</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">95</div>
+                        <abbr title="Amerício">
+                            <div class="simbolo" id="am">Am</div>
+                        </abbr>
+                        <div class="a">243</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">96</div>
+                        <abbr title="Cúrio">
+                            <div class="simbolo" id="cm">Cm</div>
+                        </abbr>
+                        <div class=" a">247</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">97</div>
+                        <abbr title="Berquélio">
+                            <div class="simbolo" id="bk">Bk</div>
+                        </abbr>
+                        <div class="a">247</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">98</div>
+                        <abbr title="Califórnio">
+                            <div class="simbolo" id="cf">Cf</div>
+                        </abbr>
+                        <div class="a">251</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">99</div>
+                        <abbr title="Einstênio">
+                            <div class="simbolo" id="es">Es</div>
+                        </abbr>
+                        <div class="a">252</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">100</div>
+                        <abbr title="Férmio">
+                            <div class="simbolo" id="fm">Fm</div>
+                        </abbr>
+                        <div class="a">257</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">101</div>
+                        <abbr title="Mendelévio">
+                            <div class="simbolo" id="md">Md</div>
+                        </abbr>
+                        <div class="a">258</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">102</div>
+                        <abbr title="Nobélio">
+                            <div class="simbolo" id="no">No</div>
+                        </abbr>
+                        <div class="a">259</div>
+                    </td>
+                    <td class="actinidios original-td" onmouseover="duplicateTd(this)">
+                        <div class="z">103</div>
+                        <abbr title="Laurêncio">
+                            <div class="simbolo" id="lr">Lr</div>
+                        </abbr>
+                        <div class="a">262</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </main>
+
+    <aside id="pagina_history">
+        <h2><a href="./pages/history.html">Saiba Mais Aqui</a></h2>
+    </aside>
+
+    <aside class="legenda">
+        <div class="fieldset">
+            <fieldset>
+                <legend>LEGENDA:</legend>
+                <div class="container">
+                    <ul>
+                        <div class="linhaLegenda">
+                            <li>
+                                <div class="nao_metal corLegenda"></div>
+                                <p>Não Metais</p>
+                            </li>
+                            <li>
+                                <div class="alcalinos corLegenda"></div>
+                                <p>Metais Alcalinos</p>
+                            </li>
+                            <li>
+                                <div class="semimetais corLegenda"></div>
+                                <p>Semimetais</p>
+                            </li>
+                            <li>
+                                <div class="representativos corLegenda"></div>
+                                <p>Outros Metais</p>
+                            </li>
+                            <li>
+                                <div class="lantanideos corLegenda"></div>
+                                <p>Latanídeos</p>
+                            </li>
+                        </div>
+                        <div class="linhaLegenda">
+                            <li>
+                                <div class="nobres corLegenda"></div>
+                                <p>Gases Nobres</p>
+                            </li>
+                            <li>
+                                <div class="terrosos corLegenda"></div>
+                                <p>Metais Acalino-Terrosos</p>
+                            </li>
+                            <li>
+                                <div class="halogenios corLegenda"></div>
+                                <p>Halogênios</p>
+                            </li>
+                            <li>
+                                <div class="transicao corLegenda"></div>
+                                <p>Metais de Transição</p>
+                            </li>
+                            <li>
+                                <div class="actinidios corLegenda"></div>
+                                <p>Actinídios</p>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </fieldset>
+        </div>
+    </aside>
+    <footer>
+        <p>
+            <img class="atomo" id="atomo1" src="./src/img/atom.png"
+                alt="href=https://www.flaticon.com/br/icones-gratis/atomo title=átomo ícones Átomo ícones criados por Freepik - Flaticon">
+            Matheus Eduardo, Rafael Santiago, Renato Florencio 1D
+            <img class="atomo" id="atomo2" src="./src/img/atom.png"
+                alt="href=https://www.flaticon.com/br/icones-gratis/atomo title=átomo ícones Átomo ícones criados por Freepik - Flaticon">
+        </p>
+    </footer>
+
+    <script src="./src/js/tema.js"></script>
+    <script src="./src/js/table.js"></script>
+    <script src="./src/js/newcell.js"></script>
+    <script src="./src/js/audio.js"></script>
+    <script src="./src/js/config.js"></script>
+    <script src="./src/js/setas.js"></script>
+    <script src="./src/js/hamburguer.js"></script>
+
+</body>
+
+</html>

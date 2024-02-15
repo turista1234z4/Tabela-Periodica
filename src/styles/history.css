@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Tektur:wght@500&family=Tourney:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Teko & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+:root {
+  --corBackground: rgb(14, 5, 97);
+  --corText: #ffffff;
+  --corHover: rgb(5, 45, 97);
+  --corCorpo: #ffd902;
+  --sombraCorpo: 0.09em 0.09em 5px rgb(0, 0, 0);
+  --fonteTitulo: 'Black Ops One', Impact, sans-serif;
+  --fonteSubTitulos: 'Vast Shadow', 'Times New Roman', Times, serif;
+  --fonteTexto: 'Josefin Sans', sans-serif;
+  --fonteHeader: 'Tektur', Helvetica, sans-serif;
+  --fonteFooter: 'Tourney', serif;
+}
+
+* {
+  font-family: 'Teko', sans-serif;
+}
+
+header {
+  box-shadow: 2px 2px 3px black
+}
+
+header,
+header * * {
+  margin: 0;
+  font-family: var(--fonteHeader);
+}
+
+body {
+  background-color: #361E50;
+  background-image: url("../img/history/background.jpg");
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 1200px;
+  height: 950px;
+  padding: 0;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 1%;
+  color: black;
+  background-color: #ffffff;
+  box-shadow: 0.6em 0.6em 0.6em rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  word-spacing: 5px;
+  letter-spacing: 1.5px;
+  line-height: 1cm;
+}
+
+.dp-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dp-menu ul {
+  background-color: var(--corBackground);
+}
+
+.dp-menu ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.dp-menu ul li a { 
+  display: inline-block;
+  color: var(--corText);
+  text-decoration: none;
+  padding: 10px;
+  width: 8em;
+}
+
+.dp-menu ul li a:hover {
+  background-color: var(--corHover)
+}
+
+/*sub menu*/
+.dp-menu ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+
+}
+
+.dp-menu ul li:hover ul {
+  display: block;
+}
+
+.dp-menu ul ul li a {
+  display: block;
+}
+
+.dp-menu ul ul {
+  width: 150px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fonteSubTitulos);
+}
+
+h1#titulo_history {
+  color: var(--corCorpo);
+  font-family: var(--fonteTitulo);
+  text-shadow: var(--sombraCorpo);
+  font-size: 4em;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3,
+h4 {
+  text-indent: 1em
+}
+
+p {
+  font-family: var(--fonteTexto);
+  font-weight: 600;
+  margin: 20px;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+span.familias {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main img {
+  display: block;
+  margin: auto;
+}
+
+img.cient {
+  width: 200px;
+  max-height: 350px;
+}
+
+img.metade {
+  scale: 75%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+main p {
+  font-size: 20px;
+  text-indent: 2em;
+}
+
+main a {
+  text-decoration: none;
+  color: blue;
+}
+
+main a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+main a:visited {
+  color: purple;
+}
+
+iframe {
+  width: 920px;
+  height: 700px;
+  position: relative;
+  left: 8em;
+}
+
+footer,
+footer * {
+  font-family: var(--fonteFooter);
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--corCorpo);
+  text-shadow: var(--sombraCorpo);
+}
+
+/*estilização para seleção de background*/

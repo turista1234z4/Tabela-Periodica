@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+:root {
+    --cor_letras: #000000;
+    --cor_fundo: linear-gradient(to right, #141414, #0f0f0f, #1a1a1a, #3c3c3c);
+    --cor_nao_metalDark: #47ca30e8;
+    --cor_nobresDark: #2793e0e6;
+    --cor_alcalinosDark: #ca31c7e7;
+    --cor_terrososDark: #d89e00e0;
+    --cor_semimetaisDark: #4db6acde;
+    --cor_halogeniosDark: #458ea8e1;
+    --cor_representativosDark: #858484e0;
+    --cor_transicaoDark: #c45b06e6;
+    --cor_lantanideosDark: #4c2bc5e1;
+    --cor_actinidiosDark: #c22466ea;
+}
+
+/* *CONFIGURAÇÕES GERAIS DA PÁGINA INDEX* */
+* header {
+    color: rgb(230, 226, 226);
+    background-color: rgb(38, 38, 66);
+}
+
+header nav {
+    background-color: transparent;
+}
+
+.mobile-menu div {
+    background-color: white;
+}
+
+* {
+    color: #ffffff;
+}
+
+body {
+    color: var(--cor_letras);
+    background-color: rgb(10, 2, 26);
+}
+
+button {
+    color: #000000;
+}
+
+form {
+    border: 1px solid white;
+}
+
+table#periodica * {
+    color: black;
+}
+
+table#periodica tr.brancoNoDark * {
+    color: white;
+}
+
+table#periodica td.num_periodo,
+table#periodica p.linhasSeparadas {
+    color: #ffffff;
+}
+
+/* *Extra* */
+.duplicate-td {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+table#elemental {
+    border: 1px solid rgb(34, 34, 34);
+}
+
+table#elemental th {
+    background-color: #6585ec;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+table#elemental td {
+    color: #000000;
+    border: 1px solid #000000;
+    background-color: rgb(229, 229, 236);
+}
+
+table#elemental td * {
+    font-size: 0.75em;
+    padding: 10%;
+}
+
+aside#pagina_history {
+    color: white;
+}
+
+aside#pagina_history *:hover {
+    color: rgb(184, 184, 187);
+    text-decoration: underline;
+}
+
+/* *Configurações do tipo de elemento* */
+#periodica td {
+    border: 0.5px solid rgba(143, 143, 143, 0);
+}
+
+.nao_metal {
+    background-color: var(--cor_nao_metalDark);
+}
+
+.nobres {
+    background-color: var(--cor_nobresDark);
+}
+
+.alcalinos {
+    background-color: var(--cor_alcalinosDark);
+}
+
+.terrosos {
+    background-color: var(--cor_terrososDark);
+}
+
+.semimetais {
+    background-color: var(--cor_semimetaisDark);
+}
+
+.halogenios {
+    background-color: var(--cor_halogeniosDark);
+}
+
+.representativos {
+    background-color: var(--cor_representativosDark);
+}
+
+
+.transicao {
+    background-color: var(--cor_transicaoDark);
+}
+
+.lantanideos {
+    background-color: var(--cor_lantanideosDark);
+}
+
+table#periodica #legendaLatanideos {
+    color: var(--cor_lantanideosDark);
+}
+
+.actinidios {
+    background-color: var(--cor_actinidiosDark);
+}
+
+table#periodica #legendaActinidios {
+    color: var(--cor_actinidiosDark);
+}
+
+.nao_metal:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--cor_nao_metalDark), 0 0 20px var(--cor_nao_metalDark), 0 0 25px var(--cor_nao_metalDark), 0 0 30px var(--cor_nao_metalDark), 0 0 35px var(--cor_nao_metalDark);
+}
+
+.nobres:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--cor_nobresDark), 0 0 20px var(--cor_nobresDark), 0 0 25px var(--cor_nobresDark), 0 0 30px var(--cor_nobresDark), 0 0 35px var(--cor_nobresDark);
+}
+
+.alcalinos:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--cor_alcalinosDark), 0 0 20px var(--cor_alcalinosDark), 0 0 25px var(--cor_alcalinosDark), 0 0 30px var(--cor_alcalinosDark), 0 0 35px var(--cor_alcalinosDark);
+}
+
+.terrosos:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--cor_terrososDark), 0 0 20px var(--cor_terrososDark), 0 0 25px var(--cor_terrososDark), 0 0 30px var(--cor_terrososDark), 0 0 35px var(--cor_terrososDark);
+}
+
+.semimetais:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--cor_semimetaisDark), 0 0 20px var(--cor_semimetaisDark), 0 0 25px var(--cor_semimetaisDark), 0 0 30px var(--cor_semimetaisDark), 0 0 35px var(--cor_semimetaisDark);
+}
+
+.halogenios:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--cor_halogeniosDark), 0 0 20px var(--cor_halogeniosDark), 0 0 25px var(--cor_halogeniosDark), 0 0 30px var(--cor_halogeniosDark), 0 0 35px var(--cor_halogeniosDark);
+}
+
+.representativos:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+.transicao:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--cor_transicaoDark), 0 0 20px var(--cor_transicaoDark), 0 0 25px var(--cor_transicaoDark), 0 0 30px var(--cor_transicaoDark), 0 0 35px var(--cor_transicaoDark);
+}
+
+.lantanideos:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--cor_lantanideosDark), 0 0 20px var(--cor_lantanideosDark), 0 0 25px var(--cor_lantanideosDark), 0 0 30px var(--cor_lantanideosDark), 0 0 35px var(--cor_lantanideosDark);
+}
+
+.actinidios:hover {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--cor_actinidiosDark), 0 0 20px var(--cor_actinidiosDark), 0 0 25px var(--cor_actinidiosDark), 0 0 30px var(--cor_actinidiosDark), 0 0 35px var(--cor_actinidiosDark);
+}
+
+#veja_mais {
+    color: #fff;
+    z-index: 0;
+}
+
+/*.buttonA p {
+    color: #000000;
+}*/
+
+fieldset {
+    background-color: rgb(37, 112, 122);
+    margin-right: 20vh;
+}
+.buttonA{
+    margin-left: 190px;
+}
+#label, #inputRangeBordas{
+    margin-left: 70px;
+}
+#enviar{
+    margin-left: 130px;
+}
